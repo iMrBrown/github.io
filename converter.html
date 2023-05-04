@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Онлайн калькулятор физических величин</title>
+    <meta name="description" content="Онлайн калькулятор позволит вам произвести быстрый перевод физических величин. Конвертер удобен и прост в использовании. Начните переводить прямо сейчас!" />
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="онлайн калькулятор, перевод величин, конвертер, СИ, определение величин" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen"/>
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#0b4657">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+    <header class="header flex-header blue-grey lighten-5">
+        <div class="logo">
+            <img src="img/logo.png" alt="Логотип">
+        </div>
+        <div class="container center-h">
+            <div class="row">
+                <div class="col xl9 l10 m10 offset-m1 s10 offset-s1">
+                    <h1 class="center-align blue-grey-text text-darken-3 margin-top-0">Перевод величин онлайн </h1>
+                </div>
+            </div> <!--row-->
+        </div> <!--container-->   <!--blue-grey lighten-1-->
+    </header>
+    <div class="header-poloska green lighten-2"></div>
+    <section class="section-a">
+        <div class="container">
+            <div class="row">
+                <div class="col l10 offset-l1">
+                    <p class="text-style-top">
+                        Калькулятор величин в режиме онлайн позволит вам перевести одну величину в другую всего в пару кликов, где бы вы не находились: у себя дома или, решая сложные рассчеты на работе, а может быть такая необходимость возникла на учебе. Конвертировать можно в обе стороны, а сам дизайн сделан так, что в нем трудно запутаться. Ниже вы найдете информацию о величинах, используемых в калькуляторе - их определения и в чем они измеряются в международной системе ( если такие там есть).
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col xl8 offset-xl2 l12 m10 offset-m1 s10 offset-s1">
+                    <h2 class="center-align">Конвертер  готов к работе</h2>
+                    <div id="anchor" class="calc-bord z-depth-1 scrollspy">
+                        <div class="row">
+                            <div class="input-field col l6 offset-l3 margin-top-40 margin-left-10">
+        						<select  id="spisok">
+        							<option id="vremya" value="1">Время</option>
+        							<option id="davl" value="2">Давление</option>
+        							<option id="dlina" value="3">Длина</option>
+        							<option id="mass" value="4">Масса</option>
+        							<option id="ob" value="5">Объем</option>
+        							<option id="obi" value="6">Объем информации</option>
+        							<option id="corn" value="7"> Угол</option>
+        							<option id="plosh" value="8">Площадь</option>
+        							<option id="temp" value="9">Температура</option>
+        							<option id="chast" value="10">Частота</option>
+        							<option id="energ" value="11">Энергия</option>
+        						</select>
+                                <label>Выберите параметр</label>
+                            </div> <!--select-->
+                        </div>
+                        <div class="row">
+                            <div class="col l6">
+                                <div class="input-field col l10 offset-l1">
+                                    <select id="sel1"></select>
+                                </div>
+                                <div class="input-field col l10 offset-l1 ">
+                                    <input placeholder="Введите число" id="inp-a" type="number" class="inp">
+                                </div>
+                            </div>
+                            <div class="col l6">
+                                <div class="input-field col l10 offset-l1">
+                                    <select id="sel2"></select>
+                                </div>
+                                <div class="input-field col l10 offset-l1">
+                                    <input placeholder="Результат"  id="inp-b" type="number" class="inp">
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--calc-bord-->
+                </div>
+            </div>
+        </div> <!--container-->
+    </section><!--section-a-->
+    <section class="section-b">
+        <div class="container">
+            <div class="row">
+                <div class="col l8 offset-l2 m10 offset-m1 s11 offset-s1 margin-top-40">
+                    <h3 class="center-align">Руководство по переводу</h3>
+                    <ul  class="margin-top-40">
+                        <li class="li-marker">Выберите необходимый параметр в самом верху (длина, время, давление и т.д.)</li>
+                        <li class="li-marker">В левой графе выберите величину, которую необходимо перевести.<br />
+                        <span class="tutor-span">Для мобильных устройств в следующей графе </span>  </li>
+                        <li class="li-marker">В правой графе выберите величину, на которую необходимо перевести.<br />
+                        <span class="tutor-span">Для мобильных устройств в крайней графе  </span></li>
+                        <li class="li-marker">В графе "Введите число" введите то, что нужно перевести.<br />
+                        <span class="tutor-span">Для мобильных устройств во 2-ой графе сверху</span></li>
+                        <li class="li-marker">Конвертер работает в обе стороны. При желании можно переводить как справа налево, так и в обратную сторону (слева направо).</li>
+                    </ul>
+                    <blockquote class="text-style">
+                        Если число слишком большое, то оно запишется с экспонентой. Экспонента соотвествует десятичной степени. Например: 1,232323...e-7 = 1,232323*10<sup>-7</sup>.
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-c">
+        <div class="container">
+            <div class="row">
+                <div class="col max-width">
+                    <div class="row">
+                        <div class="col l8 offset-l2 margin-top-20">
+                            <h3 class="center-align">Определения величин, используемых в калькуляторе и их размерность в системе СИ</h3>
+                        </div>
+                    </div>
+                    <div class="row margin-top-40 row-flex">
+                        <div class="col l4 m6">
+                            <div class="card hoverable deep-purple darken-1">
+                                <div class="card-content white-text z-depth-3 box-shadow">
+                                    <img src="img/time.png" alt="Время" class="card-img">
+                                    <span class="card-title">Время (c)</span>
+                                    <hr />
+                                    <p>
+                                        Время в классической физике - величина непрерывная и ничем не определяется. В релятивистской физике время является частью пространства и становится 4-ым его измерением (длина, ширина, высота, время).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l4 m6">
+                            <div class="card hoverable orange darken-1">
+                                <div class="card-content white-text z-depth-3 box-shadow">
+                                    <img src="img/pressure.png" alt="Давление" class="card-img">
+                                    <span class="card-title">Давление (Па)</span>
+                                    <hr />
+                                    <p>
+                                        Давление — величина, которая характеризует распределение воздействия по площади поверхности, перпендикулярной воздействию. В метеорологии 760 мм рт. ст. = 1 атмосфере или 101325 Па.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l4 m6">
+                            <div class="card hoverable blue darken-1">
+                                <div class="card-content white-text z-depth-3 box-shadow">
+                                    <img src="img/length.png" alt="Длина" class="card-img">
+                                    <span class="card-title">Длина (м)</span>
+                                    <hr />
+                                    <p>
+                                        Длина - величина, котороая показывает расстояние между двумя крайними наиболее удаленными друг от друга точками некоторой линии, тела, плоскости и т.д. Эталон метра хранится в Парижской палате мер и весов.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--row_1-->
+                    <div class="row row-flex">
+                        <div class="col l4 m6">
+                            <div class="card hoverable blue-grey darken-1">
+                                <div class="card-content white-text z-depth-3 box-shadow">
+                                    <img src="img/weight.png" alt="Масса" class="card-img">
+                                    <span class="card-title">Масса (кг)</span>
+                                    <hr />
+                                    <p>
+                                        Масса - величина, которая является одной из основных характеристик материи, и которая определяет ее инерционные и гравитационные свойства. Таким образом, различают инертную массу и гравитационную массу.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l4 m6">
+                            <div class="card hoverable green darken-1">
+                                <div class="card-content white-text z-depth-3 box-shadow">
+                                    <img src="img/scope.png" alt="Объем" class="card-img">
+                                    <span class="card-title">Объем (м<sup>3</sup>)</span>
+                                    <hr />
+                                    <p>
+                                        Объем - величина, которая показывает, какое пространство занимает тело или вещество. Понятия объема и вместимости тесно связаны друг с другом. Вместимость является внутренним пространством сосуда, контейнера и т.п.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l4 m6">
+                            <div class="card hoverable brown darken-1">
+                                <div class="card-content white-text z-depth-3 box-shadow">
+                                    <img src="img/scope_inf.png" alt="Объем информации" class="card-img">
+                                    <span class="card-title">Объем информации</span>
+                                    <hr />
+                                    <p>
+                                        Объем информации - величина, которая показывает какое пространство занимает информация на запоминающем устройстве. Основными единицами измерения считаются бит и байт. Причем в байте содержится 8 бит.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--row_2-->
+                    <div class="row row-flex">
+                        <div class="col l4 m6">
+                            <div class="card hoverable pink darken-3">
+                                <div class="card-content white-text z-depth-3 box-shadow">
+                                    <img src="img/angle.png" alt="Угол" class="card-img">
+                                    <span class="card-title">Угол (рад)</span>
+                                    <hr />
+                                    <p>
+                                        Угол - геометрическая фигура, состоящая из двух лучей, которые выходят из одной общей точки. Угол принимает значения от 0 до 360 градусов. В зависимости от значения может быть острым, прямым  и тупым.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l4 m6">
+                            <div class="card hoverable teal darken-1">
+                                <div class="card-content white-text z-depth-3 box-shadow">
+                                    <img src="img/square.png" alt="Площадь" class="card-img">
+                                    <span class="card-title">Площадь (м<sup>2</sup>)</span>
+                                    <hr />
+                                    <p>
+                                        Площадь - величина, которая количественно характеризует геометрические двумерные фигуры. Она показывает, какое пространтсво занимает измеряемая фигура путём заполнения этой фигуры единичными квадратами.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l4 m6">
+                            <div class="card hoverable indigo darken-1">
+                                <div class="card-content white-text z-depth-3 box-shadow">
+                                    <img src="img/temperature.png" alt="Температура" class="card-img">
+                                    <span class="card-title">Температура (&deg;C)</span>
+                                    <hr />
+                                    <p>
+                                        Температура - величина, которая показывает степень нагретости тела. Измеряется в Цельсиях, Кельвинах и Фаренгейтах. Температура абсолютного нуля равна 0 Кельвинов или -273,15 градусов Цельсия.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--row_3-->
+                    <div class="row row-flex-double">
+                        <div class="col l4 m6 reset">
+                            <div class="card hoverable deep-purple darken-1">
+                                <div class="card-content white-text z-depth-3 box-shadow">
+                                    <img src="img/freq.png" alt="Частота" class="card-img">
+                                    <span class="card-title">Частота (Гц)</span>
+                                    <hr />
+                                    <p>
+                                        Частота - величина, которая показывает количество повторений событий, процессов или каких-либо явлений. Частотой обладают свет, звук, радиоволны. Единицей измерения является Герц.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l4 m6 reset">
+                            <div class="card hoverable orange darken-1">
+                                <div class="card-content white-text z-depth-3 box-shadow">
+                                    <img src="img/energy.png" alt="Энергия" class="card-img">
+                                    <span class="card-title">Энергия (Дж)</span>
+                                    <hr />
+                                    <p>
+                                        Энергия - общая числовая мера движения и взаимодействия всех видов материи. По закону сохранения энергии - энергия переходит из одного состояние в другое. Она не может возникнуть из ниоткуда или исчезнуть.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--row_4-->
+                    <div class="row margin-top-60">
+                        <div class="col l6 offset-l3 m8 offset-m2 grey lighten-3">
+                            <p class="center-align text-style-comments">
+                                Нам важно ваше мнение. Напишите, каких измерений вам не хватает или сообщите о замеченных ошибках.
+                            </p>
+                            <div id="vk_comments">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="page-footer margin-top-80 teal darken-1">
+        <div class="container margin-bottom-80">
+            <div class="row">
+                <div class="col l6 m6 s6">
+                    <p class="white-text text-style-footer">
+                        Получилось?
+                    </p>
+                    <p class="grey-text text-lighten-4">
+                        Надеемся, что вы перевели нужную вам физическую величину и у вас не возникло трудностей!
+                    </p>
+                </div>
+                <div class="col l4 offset-l2 m6 s6 margin-top-20">
+                    <a class="waves-effect waves-light btn-large right blue-grey darken-2 z-depth-5 " href="#anchor">Наверх</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright teal darken-3">
+            <div class="container">
+                &copy; 2018 Copyright Text
+            </div>
+        </div>
+    </footer>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/converter.min.js"></script>
+</body>
+</html>
