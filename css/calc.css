@@ -1,0 +1,217 @@
+@charset "utf-8";
+/* CSS Document */
+
+.container {
+    background: #8C9098;
+    width: 340px;
+    height: 460px;
+    border: 3px solid #282C34;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    position: relative;
+}
+
+.line-up {
+    background: #282C34;
+    text-align: right;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    color: #a2bb5d;
+    padding-right: 20px;
+    height: 40px;
+    width: 340px;
+    top: 10px;
+}
+
+.enter {
+    background: white;
+    width: 314px;
+    height: 40px;
+    border: 3px solid #282C34;
+    border-radius: 10px;
+    position: relative;
+    top: 30px;
+    left: 10px;
+}
+
+.input_p {
+    text-align: right;
+    font-size: 30pt;
+    margin-top: 0;
+    font-weight: 100;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.bar {
+    width: 110px;
+    height: 40px;
+    position: relative;
+    left: 204px;
+    top: 40px;
+    border: 3px solid #282C34;
+    border-radius: 10px;
+    background: linear-gradient(rgb(110,112,120), rgb(81,81,86)) rgb(110,112,120);
+}
+
+.bar p {
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 0;
+    font-size: 12pt;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #777;
+    color: #fff;
+}
+
+.bar:hover {
+    border: 3px solid #F64C2B;
+    box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #800;
+    background: linear-gradient(#FB9575, #F45A38 48%, #EA1502 52%, #F02F17);
+    cursor: pointer;
+}
+
+.bar:active {
+    box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+}
+
+.line-1 div {
+    background: linear-gradient(rgb(110,112,120), rgb(81,81,86)) rgb(110,112,120);
+    width: 50px;
+    height: 50px;
+    border: 3px solid #282C34;
+    border-radius: 10px;
+    position: relative;
+    float: left;
+    top: 60px;
+    left: 25px;
+    margin-right: 20px;
+    font-size: 14pt;
+    color: #ECB02B;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.line-1 div:hover, .line-2 div:hover, .line-3 div:hover, .line-4 div:hover {
+    background: linear-gradient(rgb(126,126,134), rgb(70,71,76)) rgb(126,126,134);
+    cursor: pointer;
+}
+
+.line-1 div:active, .line-2 div:active, .line-3 div:active, .line-4 div:active {
+    background: linear-gradient(rgb(76,77,82), rgb(56,57,62)) rgb(76,77,82);
+    box-shadow:
+    0 0 1px rgba(0,0,0,.5) inset,
+    0 2px 3px rgba(0,0,0,.5) inset,
+    0 1px 1px rgba(255,255,255,.1);
+}
+
+.line-1 p {
+    margin-top: 14px;
+}
+
+.line-2 div {
+    background: linear-gradient(rgb(110,112,120), rgb(81,81,86)) rgb(110,112,120);
+    width: 50px;
+    height: 50px;
+    border: 3px solid #282C34;
+    border-radius: 10px;
+    position: relative;
+    float: left;
+    top: 70px;
+    left: 25px;
+    margin-right: 20px;
+    font-size: 14pt;
+    color: #ECB02B;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.line-2 p {
+    margin-top: 14px;
+}
+
+.line-3 div {
+    background: linear-gradient(rgb(110,112,120), rgb(81,81,86)) rgb(110,112,120);
+    width: 50px;
+    height: 50px;
+    border: 3px solid #282C34;
+    border-radius: 10px;
+    position: relative;
+    float: left;
+    top: 80px;
+    left: 25px;
+    margin-right: 20px;
+    font-size: 14pt;
+    color: #ECB02B;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.line-3 p {
+    margin-top: 14px;
+}
+
+.line-4 div {
+    background: linear-gradient(rgb(110,112,120), rgb(81,81,86)) rgb(110,112,120);
+    width: 50px;
+    height: 50px;
+    border: 3px solid #282C34;
+    border-radius: 10px;
+    position: relative;
+    float: left;
+    top: 90px;
+    left: 25px;
+    margin-right: 20px;
+    font-size: 14pt;
+    color: #ECB02B;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.line-4 p {
+    margin-top: 14px;
+}
+
+.b
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+.header {
+    background-image: linear-gradient(-266deg, #fccb38 0, #fccb38 1%, #ff4d75 100%);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.my_h1 {
+    font-size: 60px;
+    color: white;
+    padding-top: 15%;
+    padding-bottom: 5%;
+}
+
+.my_button {
+    padding: 23px;
+}

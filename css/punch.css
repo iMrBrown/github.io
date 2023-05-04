@@ -1,0 +1,199 @@
+@font-face {
+    font-family: Digit; /* Гарнитура шрифта */
+    src: url(../fonts/a_lcdnovaobl_[allfont.ru].ttf); /* Путь к файлу со шрифтом */
+   }
+
+.container {
+    position: absolute;
+    height: 600px;
+    cursor: url(../img/punch/hummer90.png), auto;
+}
+
+.container:active {
+    cursor: url(../img/punch/hummer180.png), auto;
+}
+
+/* стили табло */
+.time {
+    font-family: Digit, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    width: 290px;;
+    position: absolute;
+    background-color: black;
+    color: lime;
+    left: 260px;
+    top: 28px; 
+}
+
+.time p {
+    display: inline-block;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.time span {
+    padding-left: 150px;
+}
+
+.score {
+    font-family: Digit, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    width: 290px;
+    position: absolute;
+    position: absolute;
+    background-color: black;
+    color: lime;
+    left: 270px;
+    top: 86px; 
+}
+
+.score p {
+    display: inline-block;
+    padding-left: 14px;
+}
+
+.score span {
+    padding-left: 156px;
+}
+
+.mainImage {
+    z-index: 2;
+    position: relative;
+}
+
+/* стили кнопки*/
+.divStartButton {
+    z-index: 2;
+    position: relative;
+    left: 170px;
+    bottom: 46px;
+}
+
+.startButton {
+    position: relative;
+    display: inline-block;
+    width: 240px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 10px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #777;
+    color: #fff;
+    outline: none;
+    border: 2px solid #F64C2B;
+    border-radius: 5px;
+    box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #800;
+    background: linear-gradient(#FB9575, #F45A38 48%, #EA1502 52%, #F02F17);
+    -webkit-animation: pulsate 1.2s linear infinite;
+    animation: pulsate 1.5s linear infinite;
+}
+
+.startButton:active {
+    top: .1em;
+    left: .1em;
+    box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+}
+
+.startButton:hover {
+    cursor: pointer;
+}
+
+.timeDifficult {
+    position: relative;
+    left: 5px;
+    top: 8px;
+    background: linear-gradient(to right, rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%);
+    color: black;
+    width: 90px;
+    padding: 5px;
+    font-size: 16px;
+    height: 30px;  
+}
+
+.difficult {
+    position: relative;
+    top: 8px;
+    background: linear-gradient(to right, rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%);
+    color: black;
+    width: 90px;
+    padding: 5px;
+    font-size: 16px;
+    height: 30px;
+}
+
+/* стили тыкв */
+.pumpkinSmall {
+    z-index: 1;
+    position: relative;
+    width: 71px;
+    height: 71px;
+    border-radius: 30px;
+    background-image: url(../img/punch/pumpkinSmall.png);
+}
+
+.pumpkinBig {
+    z-index: 1;
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border-radius: 30px;
+    background-image: url(../img/punch/pumpkinBig.png);
+}
+
+/* .pumpkinSmall:hover, .pumpkinBig:hover {
+    cursor: url(../img/punch/hummer90.png), auto;
+} */
+
+.pumpkinSmall:active, .pumpkinBig:active {
+    cursor: url(../img/punch/hummerCrit2.png), auto;
+}
+
+#pumpkin1 {
+    left: 292px;
+    bottom: 426px;
+}
+
+#pumpkin2 {
+    left: 424px;
+    bottom: 496px;
+}
+
+#pumpkin3 {
+    left: 204px;
+    bottom: 484px;
+}
+
+#pumpkin4 {
+    left: 355px;
+    bottom: 553px;
+}
+
+#pumpkin5 {
+    left: 510px;
+    bottom: 624px;
+}
+
+#pumpkin6 {
+    left: 251px;
+    bottom: 596px;
+}
+
+#pumpkin7 {
+    left: 432px;
+    bottom: 685px;
+}
+
+@-webkit-keyframes pulsate {
+    50% {color: yellow; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
+  }
+  @keyframes pulsate {
+    50% {color: yellow; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
+  }
