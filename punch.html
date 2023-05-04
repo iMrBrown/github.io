@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/punch.css" rel="stylesheet">
+    <title>Punch</title>
+</head>
+<body>
+    <div class="time">
+        <p>Время :<span id="timeSpan">0</span></p>
+    </div>
+    <div class="score">
+        <p>Очки :<span id="scoreSpan">0</span></p>
+    </div>
+    <div class="container">
+        <div id="table" class="mainImage">
+            <img src="img/punch/punch.png">
+        </div>
+        <div class="divStartButton">
+            <select class="timeDifficult">
+                <option value="60" selected name="timeDifficult">Время</option>
+                <option value="45" name="timeDifficult">45</option>
+                <option value="60" name="timeDifficult">60</option>
+                <option value="120" name="timeDifficult">120</option>
+            </select> 
+            <button id="startButton" class="startButton">S T A R T</button>
+            <select class="difficult">
+                <option value="2000" name="difficult">Легко</option>
+                <option value="1200" name="difficult">Средне</option>
+                <option value="700" name="difficult">Тяжело</option>
+            </select>
+        </div>
+        <div id="pumpkin1" class="pumpkinSmall" ></div>
+        <div id="pumpkin2" class="pumpkinSmall"></div>
+        <div id="pumpkin3" class="pumpkinSmall"></div>
+        <div id="pumpkin4" class="pumpkinSmall"></div>
+        <div id="pumpkin5" class="pumpkinSmall"></div>
+        <div id="pumpkin6" class="pumpkinBig"></div>
+        <div id="pumpkin7" class="pumpkinBig"></div>
+    </div>
+    <script src="js/punch.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/arkanoid.css" />
+    <title>Arkanoid</title>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="upBlock">
+
+            </div>
+            <div class="startMessage" id="startMessage">
+                
+            </div>
+            <div id="ball">
+
+            </div>
+            <div class="downBlock" id="block">
+                   
+            </div>
+        </div>
+        <div class="score">
+            <p>Score: <span id="score">0</span></p>
+        </div>
+    </div>
+    <div class="but" id="but">
+        <p>Укажите количество игроков</p>
+        <input type="radio" name="count" checked/>Один
+        <input type="radio" name="count"/>Два
+        <p>Укажите скорость</p>
+        <select>
+            <option class="speed">1</option>
+            <option class="speed" selected>2</option>
+            <option class="speed">3</option>
+            <option class="speed">4</option>
+            <option class="speed">5</option>
+        </select>
+        <button id="button">Start</button>
+    </div>
+    <div>
+        <p id="info">Для начала игры нажмите Start</p>
+        <p>Управление: нижний - стрелками; верхний - A,D</p>
+    </div>
+    <script src="js/arkanoid.js"></script>
+</body>
+</html>
