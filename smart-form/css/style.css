@@ -1,0 +1,641 @@
+﻿/*******************************************
+*
+*                  Шрифты
+*
+*******************************************/
+
+@font-face {
+    font-family: Roboto;
+    src: url('../font/Roboto-Regular.ttf');
+    font-display: fallback;
+}
+
+/*******************************************
+*
+*               Общие стили
+*
+*******************************************/
+
+body {
+	background: #FEFEFE url("../img/background.png");
+    background-repeat: repeat;
+    background-position: center center;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+body input {
+    outline:none;
+}
+
+header {
+    background: #313e7317;
+}
+
+header .logo-container {
+    padding: 10px 15%;
+}
+
+header .logo-container img {
+    height: 200px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.main {
+    margin: 20px 15%;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.invisible {
+    display: none !important;
+}
+
+.f-bold {
+    font-weight: bold !important;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.f-column {
+    flex-direction: column;
+}
+
+.flex-wrap {
+	flex-wrap: wrap !important;
+}
+
+.m-top-30 {
+	margin-top: 30px !important;
+}
+
+.wl-disabled {
+    opacity: 0.7 !important;
+}
+
+.wl-spinner {
+    border: 3px solid lightgray;
+    animation: spin 1s infinite linear;
+    border-radius: 50%;
+    border-top: 3px solid royalblue;
+    height: 30px;
+    margin: 0 auto;
+    position: relative;
+    top: -10px;
+    width: 30px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+footer.wl-footer {
+    margin-top: 50px;
+    background: whitesmoke;
+    display: block;
+}
+
+.wl-footer__link-container {
+    display: block;
+    margin: 0 0 0 15%;
+    text-decoration: none;
+    color: #465494fa;
+    padding: 20px 0;
+    width: 300px;
+}
+
+.wl-footer__link-container__text {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.wl-footer__link-container__logo {
+    height: 80px;
+}
+
+.wl-footer__link-container__coopyright {
+    text-align: center;
+    margin: 16px 0;
+    font-size: 14px;
+}
+
+.wl-ya-delivery-form .has-reference {
+    border-bottom: 2px dotted #a9a9a9;
+    margin-left: 6px;
+}
+
+.wl-ya-delivery-form .has-reference:hover {
+    cursor: pointer;
+}
+
+.wl-ya-delivery-form .has-reference__link {
+    display: inline-flex;
+    border: 1px solid;
+    border-radius: 100%;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #a9a9a9;
+    position: relative;
+    bottom: 2px;
+}
+
+.wl-ya-delivery-form .has-reference__text {
+    display: block;
+    position: absolute;
+    width: 240px;
+    background: #e8eaee;
+    padding: 10px;
+    z-index: 1000;
+    font-weight: 100;
+    font-size: 15px;
+    text-align: left;
+}
+
+/*******************************************
+*
+*             Стили виджета
+*
+*******************************************/
+
+form.wl-ya-delivery-form .form-row {
+	margin: 10px 10px 10px 0;
+    position: relative;
+    width: -webkit-fill-available;
+}
+
+form.wl-ya-delivery-form .form-row input {
+	width: 100%;
+}
+
+.wl-delivery-region-container {
+	width: 50%;
+}
+
+.wl-address-information {
+	width: 50%;
+}
+
+.ya-delivery-city {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.ya-delivery-choose-button {
+    color: #ffffff;
+    padding: 20px;
+    background: #1d4582;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    width: 300px;
+    margin: 10px 0 20px 0;
+}
+
+.ya-delivery-choose-button:hover {
+    cursor: pointer;
+    background: #112e57;
+}
+
+.ya-delivery-submit-button {
+    color: #ffffff;
+    padding: 20px;
+    background: #bc1212;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    width: 300px;
+    margin: 10px 0 20px 0;
+}
+
+.ya-delivery-submit-button:hover {
+    cursor: pointer;
+    background: #ff0000;
+}
+
+.wl-delivery-info {
+    border: 1px solid #4282bf;
+    border-radius: 10px;
+    background: #8cb5f321;
+    font-size: 1.1em;
+    line-height: 28px;
+    padding: 10px 20px;
+    width: 300px;
+    margin: 10px 0 20px 0;
+}
+
+.wl-delivery-info .delivery-name {
+    color: #1d4582;
+    font-weight: bold;
+}
+
+.wl-delivery-info .delivery-cost {
+    color: #1d4582;
+    font-weight: bold;
+}
+
+.wl-delivery-info .conditions {
+    font-size: 15px;
+    line-height: 1;
+    color: #bc1212;
+}
+
+.wl-customer-information {
+    width: 50%;
+}
+
+.wl-customer-information .name-row {
+    display: flex;
+}
+
+.ya-delivery-info {
+    margin: 10px 0;
+}
+
+/*********************************
+*
+*     Блок с адресом доставки
+*
+**********************************/
+
+form.wl-ya-delivery-form .datalist-of-cities {
+	background: #ffffff;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .1), 0 10px 20px -5px rgba(0, 0, 0, .4);
+    list-style: none;
+    padding: 10px;
+}
+
+form.wl-ya-delivery-form #wl-delivery-address {
+    margin-bottom: 0;
+}
+
+form.wl-ya-delivery-form input {
+	border: 1px solid #a8a7a7;
+}
+
+.el-of-city-list {
+    padding: 10px 0;
+}
+
+.el-of-city-list:hover {
+    background-color: #f0f8ff;
+    cursor: pointer;
+}
+
+.el-of-city-list .name {
+    color: #000000b5;
+    font-weight: 600;
+}
+
+.el-of-city-list .fullName {
+    color: #808080;
+    font-size: 0.9em;
+}
+
+.wl-address-form-row {
+	margin: 10px 0 0 0 !important;
+    position: relative;
+    width: 100% !important;
+}
+
+.wl-address-information .street-row {
+    display: flex;
+}
+
+.wl-address-information .postcode {
+	flex: 0 1 154px;
+}
+
+.wl-address-information .street-row {
+    display: flex;
+}
+
+.wl-address-information .street {
+	flex: 0 2 100%;
+    margin-right: 0 !important;
+}
+
+.wl-address-information .house-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wl-address-information .house-row .form-row {
+	flex: 0 0 120px;
+}
+
+.wl-address-form-row input {
+    width: 100%;
+}
+
+.wl-address-form-row input,
+.wl-customer-information input,
+.wl-address-information input
+{
+	box-sizing: border-box;
+    font-size: 16px;
+    padding: 30px 0 10px 10px;
+    position: relative;
+}
+
+.wl-customer-information textarea {
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.wl-address-form-row input:focus,
+.wl-customer-information input:focus, textarea[name="wl-delivery-order-comments"]:focus,
+.wl-address-information input:focus
+{
+    border-color: rgb(77, 144, 254);
+}
+
+.wl-address-form-row label,
+.wl-customer-information label,
+.wl-address-information label
+{
+    font-size: 14px;
+    color: #808080;
+    font-weight: 500;
+    left: 0;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    transition: .1s ease-out;
+    transition-property: color, font-size, font-weight, padding;
+    width: auto;
+    text-align: left;
+    z-index: 100;
+}
+
+.wl-address-form-row label.wl-label-active,
+.wl-customer-information label.wl-label-active,
+.wl-address-information label.wl-label-active
+{
+    color: #4169e1 !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.05em;
+    padding: 8px 10px !important;
+    top: 0 !important;
+}
+
+.wl-address-form-row label.wl-label-valid,
+.wl-customer-information label.wl-label-valid,
+.wl-address-information label.wl-label-valid
+{
+    color: #808080;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px 10px;
+}
+
+.wl-address-form-row label > *,
+.wl-customer-information label > *,
+.wl-address-information label > *
+{
+    display: none;
+}
+
+.wl-address-form-row label.wl-label-alert,
+.wl-customer-information label.wl-label-alert,
+.wl-address-information label.wl-label-alert
+{
+    color: #ff0000;
+    font-size: 12px;
+    top: -8px;
+}
+
+.wl-address-form-row label.wl-label-active + input.wl-input,
+.wl-address-form-row label.wl-label-active + * > input.wl-input,
+.wl-customer-information label.wl-label-active + input.wl-input,
+.wl-customer-information label.wl-label-active + * > input.wl-input,
+.wl-address-information label.wl-label-active + input.wl-input,
+.wl-address-information label.wl-label-active + * > input.wl-input
+{
+    border-color: rgb(77, 144, 254) !important;
+}
+
+.wl-address-form-row label.wl-label-alert + input.wl-input,
+.wl-address-form-row label.wl-label-alert + * > input.wl-input,
+.wl-customer-information label.wl-label-alert + input.wl-input,
+.wl-customer-information label.wl-label-alert + * > input.wl-input,
+.wl-address-information label.wl-label-alert + input.wl-input,
+.wl-address-information label.wl-label-alert + * > input.wl-input
+{
+    border-color: #ff0000;
+}
+
+#wl-billing-tel-notice {
+    color: #ff0000;
+    font-size: 14px;
+}
+
+.wl-input-mark {
+    position: absolute;
+    top: 50%;
+    font-size: 18px;
+    font-weight: 100;
+    right: 0;
+    padding: 0 10px;
+    transform: translateY(-50%);
+}
+
+.wl-valid-mark:after {
+    content: "\2714 \fe0e";
+    color: #4169e1;
+}
+
+.wl-clean-mark {
+    color: #d3d3d3;
+}
+
+.wl-clean-mark:hover {
+    color: #808080;
+    cursor: pointer;
+}
+
+.wl-clean-mark:after {
+    content: "\2716";
+}
+
+/*****************************************
+*
+*  Всплывающее окно - "Спасибо за заказ"
+*
+*****************************************/
+
+.wl-thankyou-message-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.wl-thankyou-message-container__shadow {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #000000;
+    top: 0;
+    z-index: 1000;
+    opacity: 0.7;
+}
+
+.wl-thankyou-message-container__message-row {
+    height: 200px;
+    width: 320px;
+    background: linear-gradient(45deg, #3b5998, #000000bf);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1000;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    border: 3px solid #a4b4c2;
+}
+
+.wl-thankyou-message-container__message-row__text {
+    height: 100%;
+    position: relative;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+}
+
+.wl-thankyou-message-container__message-row__text .attention {
+    font-size: 14px;
+    padding: 10px;
+    color: #ffe4c4;
+}
+
+/***********************************************
+*
+*               Медиа-запросы
+*
+ **********************************************/
+ 
+@media (max-width: 1440px) {
+	.wl-address-information .house-row .form-row {
+    	flex: 0 0 90px;
+	}
+}
+
+@media (max-width: 1024px) {
+    .wl-address-information .house-row .form-row {
+        flex: 0 0 110px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wl-customer-information {
+        width: 100%;
+    }
+    
+    .ya-delivery-choose-button {
+    	width: auto;
+    }
+    
+    .ya-delivery-submit-button {
+    	width: auto;
+    }
+    
+    .wl-delivery-region-container {
+    	width: 100%;
+    }
+    
+    .wl-address-information {
+    	width: 100%;
+    }
+
+    .wl-footer__link-container {
+        margin: 0 auto;
+    }
+
+    .wl-delivery-info {
+        width: auto;
+    }
+
+    header .logo-container img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 560px) {
+    .wl-delivery-info {
+        margin: 10px auto 20px auto;
+    }
+
+    form.wl-ya-delivery-form .form-row {
+        margin: 10px 0 10px 0;
+    }
+
+    .wl-customer-information .name-row {
+        flex-direction: column;
+    }
+
+    .wl-address-information .street-row {
+        flex-direction: column;
+    }
+
+    .wl-address-information .street-row .form-row {
+        flex: auto;
+    }
+
+    .wl-address-information .street-row .postcode {
+        margin-bottom: 20px;
+    }
+
+    .wl-address-information .house-row {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .wl-address-information .house-row .form-row {
+        flex: auto;
+    }
+}
+
+@media (max-width: 425px) {
+    .wl-thankyou-message-container__message-row {
+        width: 300px;
+    }
+
+    .wl-footer__link-container__logo {
+        width: 280px;
+        background-size: contain;
+    }
+}
